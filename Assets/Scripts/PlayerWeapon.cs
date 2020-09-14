@@ -10,7 +10,7 @@ public class PlayerWeapon : WeaponActivator
     private void Awake()
     {
         ActiveWeapons = new Weapon[2];
-        GameplayEventManager.current.onPickUp += OnPickUp;
+        //GameplayEventManager.current.onPickUp += OnPickUp;
         EquipRandomWeapon(0);
         EquipRandomWeapon(1);
     }
