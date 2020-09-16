@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour
 
         if (other.gameObject.CompareTag("Enemy"))
         {
-            other.gameObject.GetComponent<Swarmer>().ExplosionForce(other.contacts[0].point);
+            other.gameObject.GetComponent<CharacterHealth>().TakeDamage(10f);
         }
 
         Instantiate(particleEffect, transform.position, Quaternion.identity);

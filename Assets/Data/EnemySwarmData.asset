@@ -26,3 +26,7 @@ MonoBehaviour:
   jumpVelocity: 5
   maxWaver: 40
   minWaver: -40
+  damage: 5
+  damageTime: 0.1
+  bodyDeSpawnTime: 6
+  unseenDeSpawnTime: 30

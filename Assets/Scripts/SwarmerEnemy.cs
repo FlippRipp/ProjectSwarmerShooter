@@ -3,13 +3,13 @@ using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class Swarmer : MonoBehaviour
+public class SwarmerEnemy : MonoBehaviour
 {
-    private Rigidbody body;
-    [SerializeField] private Transform target;
+    public Transform target;
     [SerializeField] private EnemySwarmData enemySwarmData;
+    
+    private Rigidbody body;
     private float waverAmount = 10;
-
     private float randomMaxSpeed;
     private float rotationSpeed;
     private float currentSpeed;
@@ -19,9 +19,16 @@ public class Swarmer : MonoBehaviour
     private bool isFleeing = default;
     private float lastJumpTime;
     private bool flying;
+    private bool isDead;
+    private bool isSeen;
+    private float lastAttackTime;
+    private float lastTimeSeen;
+    public event Action<GameObject> EnemyDeath;
+    
 
     private void Awake()
     {
+        lastTimeSeen = Time.time;
         body = GetComponent<Rigidbody>();
         randomMaxSpeed = Random.Range(enemySwarmData.minSpeed, enemySwarmData.maxSpeed);
         waverAmount = Random.Range(enemySwarmData.minWaver, enemySwarmData.maxWaver);
@@ -32,11 +39,17 @@ public class Swarmer : MonoBehaviour
 
     private void Update()
     {
-        if (flying)
+        DespawnEnemy();
+        if (isDead)
         {
-            Drag();
             return;
         }
+        Move();
+    }
+    
+
+    private void Move()
+    {
         Vector3 velocity = transform.forward * currentSpeed;
         velocity.y = body.velocity.y - 50 * Time.deltaTime;
         if (Time.time - lastJumpTime > timeBetweenJumps)
@@ -52,14 +65,13 @@ public class Swarmer : MonoBehaviour
             }
         }
         body.velocity = velocity;
-        if (Time.time % reflex < 0.01)
+        if (Time.time % reflex < 0.01f)
         {
             directionToTarget = target.position - transform.position;
         }
 
         float angle = Vector3.SignedAngle(transform.forward, directionToTarget, Vector3.up);
 
-        //Debug.Log(angle);
 
         if (isFleeing)
         {
@@ -78,11 +90,42 @@ public class Swarmer : MonoBehaviour
         }
     }
 
-    private void Drag()
+    private void DespawnEnemy()
     {
-        Vector3 velocity = body.velocity - body.velocity * (10f * Time.deltaTime);
-        velocity.y = body.velocity.y;
-        body.velocity = velocity;
+        if (isSeen) return;
+        if (isDead && Time.time - lastTimeSeen > enemySwarmData.bodyDeSpawnTime)
+        {
+            Destroy(gameObject);
+        }
+        else if (Time.time - lastTimeSeen > enemySwarmData.unseenDeSpawnTime)
+        {
+            Debug.Log("despawn 1");
+            Debug.Log("despawn 3");
+            EnemyDeath?.Invoke(gameObject);
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnBecameInvisible()
+    {
+        isSeen = false;
+        Vector3 dir = target.position - transform.position;
+        RaycastHit hit;
+        if (!Physics.Raycast(transform.position, dir, out hit, 100)) return;
+        if (!hit.collider.CompareTag("Player")) return;
+        lastTimeSeen = Time.time;
+    }
+
+    private void OnBecameVisible()
+    {
+        isSeen = true;
+    }
+
+    public void Death()
+    {
+        body.constraints = RigidbodyConstraints.None;
+        isDead = true;
+        EnemyDeath?.Invoke(gameObject);
     }
 
     private void OuterZone(float angle, Vector3 dist)
@@ -105,12 +148,32 @@ public class Swarmer : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Player") && !isDead)
+        {
+            DamageTarget(other.gameObject);
+        }
+    }
+
+    private void DamageTarget(GameObject target)
+    {
+        if (Time.time - lastAttackTime > enemySwarmData.damageTime)
+        {
+            CharacterHealth characterHealth = target.GetComponent<CharacterHealth>();
+            if (characterHealth)
+            {
+                characterHealth.TakeDamage(enemySwarmData.damage);
+            }
+        }
+    }
+
     public void ExplosionForce(Vector3 hitPos)
     {
         flying = true;
-        body.AddExplosionForce(10000, hitPos, 3);
+        body.AddExplosionForce(1000, hitPos, 3);
     }
-
+    
     private void InnerZone()
     {
     }

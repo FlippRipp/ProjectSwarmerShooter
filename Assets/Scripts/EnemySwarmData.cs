@@ -19,4 +19,10 @@ public class EnemySwarmData : ScriptableObject
     public float jumpVelocity = 5;
     public float maxWaver = 5f;
     public float minWaver = -5f;
+    [Header("Damage")]
+    public float damage = 1;
+    public float damageTime = 0.5f;
+    [Header("DeSpawn Time")] 
+    public float bodyDeSpawnTime = 10f;
+    public float unseenDeSpawnTime = 30f;
 }

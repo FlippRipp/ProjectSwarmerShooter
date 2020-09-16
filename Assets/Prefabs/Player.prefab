@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1914187192896295478}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: WeaponPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,9 +43,11 @@ GameObject:
   - component: {fileID: 1914187193118107299}
   - component: {fileID: 1914187193118107298}
   - component: {fileID: 1914187193118107297}
-  m_Layer: 8
+  - component: {fileID: 251438133}
+  - component: {fileID: 251438134}
+  m_Layer: 11
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,6 +125,42 @@ MonoBehaviour:
   playerInputSpace: {fileID: 0}
   playerModel: {fileID: 1914187193818536164}
   maxDistance: 1.2
+--- !u!114 &251438133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914187193118107296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e6b3e3977c7d74984dbf7ad4942154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldPrefab: {fileID: 4151312043047492512, guid: a7201f6d6c8e81040b68fe248e7c6ce2, type: 3}
+  growSpeed: 0.05
+--- !u!114 &251438134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914187193118107296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5d310e35e32a843bfc293c617840fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  regen: 1
+  regenCoolDown: 5
+  regenPerSecond: 5
+  CharacterDied:
+    m_PersistentCalls:
+      m_Calls: []
+  CharacterTookDamage:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1914187193818536187
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +172,7 @@ GameObject:
   - component: {fileID: 1914187193818536164}
   - component: {fileID: 1914187193818536167}
   - component: {fileID: 1914187193818536166}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: PlayerModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
