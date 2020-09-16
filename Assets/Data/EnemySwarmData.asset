@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 057b52a9beecafa47b4c33da300febef, type: 3}
+  m_Name: EnemySwarmData
+  m_EditorClassIdentifier: 
+  maxSpeed: 8
+  minSpeed: 3
+  accel: 1
+  lockAngle: 10
+  preferedDistToTarget: 2
+  minRotationSpeed: 90
+  maxRotationSpeed: 140
+  minReflex: 0.1
+  maxReflex: 0.3
+  minTimeBetweenJumps: 1
+  maxTimeBetweenJumps: 2
+  jumpVelocity: 5
+  maxWaver: 40
+  minWaver: -40

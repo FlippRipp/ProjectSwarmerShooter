@@ -6,21 +6,8 @@ using Random = UnityEngine.Random;
 public class Swarmer : MonoBehaviour
 {
     private Rigidbody body;
-    [SerializeField] private float maxSpeed = 5f;
-    [SerializeField] private float minSpeed = 3f;
-    [SerializeField] private float accel = 1f;
-    [SerializeField] private float lockAngle;
     [SerializeField] private Transform target;
-    [SerializeField] private float preferedDistToTarget = 10f;
-    [SerializeField] private float minRotationSpeed = 3f;
-    [SerializeField] private float maxRotationSpeed = 10f;
-    [SerializeField] private float minReflex = 0.1f;
-    [SerializeField] private float maxReflex = 0.1f;
-    [SerializeField] private float minTimeBetweenJumps = 1;
-    [SerializeField] private float maxTimeBetweenJumps = 3;
-    [SerializeField] private float jumpVelocity;
-    public float maxWaver = 5f;
-    public float minWaver = -5f;
+    [SerializeField] private EnemySwarmData enemySwarmData;
     private float waverAmount = 10;
 
     private float randomMaxSpeed;
@@ -36,11 +23,11 @@ public class Swarmer : MonoBehaviour
     private void Awake()
     {
         body = GetComponent<Rigidbody>();
-        randomMaxSpeed = Random.Range(minSpeed, maxSpeed);
-        waverAmount = Random.Range(minWaver, maxWaver);
-        rotationSpeed = Random.Range(minRotationSpeed, maxRotationSpeed) * randomMaxSpeed / minSpeed;
-        reflex = Random.Range(minReflex, maxReflex);
-        timeBetweenJumps = Random.Range(minTimeBetweenJumps, maxTimeBetweenJumps);
+        randomMaxSpeed = Random.Range(enemySwarmData.minSpeed, enemySwarmData.maxSpeed);
+        waverAmount = Random.Range(enemySwarmData.minWaver, enemySwarmData.maxWaver);
+        rotationSpeed = Random.Range(enemySwarmData.minRotationSpeed, enemySwarmData.maxRotationSpeed) * randomMaxSpeed / enemySwarmData.minSpeed;
+        reflex = Random.Range(enemySwarmData.minReflex, enemySwarmData.maxReflex);
+        timeBetweenJumps = Random.Range(enemySwarmData.minTimeBetweenJumps, enemySwarmData.maxTimeBetweenJumps);
     }
 
     private void Update()
@@ -54,14 +41,12 @@ public class Swarmer : MonoBehaviour
         velocity.y = body.velocity.y - 50 * Time.deltaTime;
         if (Time.time - lastJumpTime > timeBetweenJumps)
         {
-            Debug.Log("time to jump");
             if (Physics.Raycast(transform.position, transform.forward, 1.2f))
             {
                 if (Physics.Raycast(transform.position, -transform.up, 1.2f))
                 {
 
-                    Debug.Log("boing");
-                    velocity.y = jumpVelocity * 5;
+                    velocity.y = enemySwarmData.jumpVelocity * 5;
                     lastJumpTime = Time.time;
                 }
             }
@@ -82,7 +67,7 @@ public class Swarmer : MonoBehaviour
         }
         else
         {
-            if (directionToTarget.magnitude > preferedDistToTarget)
+            if (directionToTarget.magnitude > enemySwarmData.preferedDistToTarget)
             {
                 OuterZone(angle, directionToTarget);
             }
@@ -104,9 +89,9 @@ public class Swarmer : MonoBehaviour
     {
         if (currentSpeed < randomMaxSpeed)
         {
-            currentSpeed += accel * Time.deltaTime;
+            currentSpeed += enemySwarmData.accel * Time.deltaTime;
         }
-        if (Mathf.Abs(angle) < lockAngle)
+        if (Mathf.Abs(angle) < enemySwarmData.lockAngle)
         {
             transform.Rotate(0, waverAmount * Time.deltaTime,0 );
         }
@@ -123,7 +108,7 @@ public class Swarmer : MonoBehaviour
     public void ExplosionForce(Vector3 hitPos)
     {
         flying = true;
-        body.AddExplosionForce(1000, hitPos, 3);
+        body.AddExplosionForce(10000, hitPos, 3);
     }
 
     private void InnerZone()

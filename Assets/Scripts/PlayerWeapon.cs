@@ -23,7 +23,6 @@ public class PlayerWeapon : WeaponActivator
     private void EquipRandomWeapon(int equipSlot)
     {
         int randomWeapon = Random.Range(0, weapons.Length);
-        print(randomWeapon);
         if (weapons[randomWeapon] != null)
         {
             ActiveWeapons[equipSlot] = weapons[randomWeapon];
