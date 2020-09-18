@@ -25,5 +25,5 @@ MonoBehaviour:
   maxDistanceFromWall: 1
   wallRunningSpeed: 0
   jumpForce: 8
-  gravityMultiplier: 1
+  gravityMultiplier: 0.2
   inAirMovementMultiplier: 1

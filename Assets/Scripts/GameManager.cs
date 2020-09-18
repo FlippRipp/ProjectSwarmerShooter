@@ -36,6 +36,13 @@ namespace FG
             #endif
         }
 
+        public void EndGame()
+        {
+            GameplayEventManager.instance.EndGame();
+            LockCursor = false;
+            Time.timeScale = 0;
+        }
+
 
         private void OnEnable()
         {

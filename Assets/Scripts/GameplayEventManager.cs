@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace FG
 {
@@ -10,7 +11,8 @@ namespace FG
         public static GameplayEventManager instance;
         public event Action OnPickUp;
         public event Action OnKill;
-        public event Action OnShield;
+        public event Action<float> OnShieldChargeChanged;
+        public event Action OnEndGame;
 
         private void Awake()
         {
@@ -28,15 +30,20 @@ namespace FG
         {
             OnPickUp?.Invoke();
         }
+        
+        public void EndGame()
+        {
+            OnEndGame?.Invoke();
+        }
 
         public void Kill()
         {
             OnKill?.Invoke();
         }
 
-        public void ShieldActive()
+        public void ShieldChargeChanged(float currentCharge)
         {
-            
+            OnShieldChargeChanged?.Invoke(currentCharge);
         }
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine.Serialization;
 
 namespace FG
 {
-    [RequireComponent(typeof(Camera))]
     public class OrbitalCamera : MonoBehaviour
     {
         [SerializeField] private Transform focus;
@@ -27,16 +26,17 @@ namespace FG
 
         private Vector2 input;
 
+        private bool enabled = true;
+
         private Vector3 focusPoint, lastFocusPoint;
         private float lastManualRotationTime;
         
-        
-
         private void Awake()
         {
             currentDistanceFromPlayer = minDistanceFromPlayer;
             focusPoint = focus.position + offset;
             transform.localRotation = Quaternion.Euler(orbitAngles);
+            GameplayEventManager.instance.OnEndGame += DisableCamera;
         }
 
         private void OnValidate()
@@ -49,12 +49,16 @@ namespace FG
             {
                 maxDistanceFromPlayer = minDistanceFromPlayer;
             }
+        }
 
-            
+        private void DisableCamera()
+        {
+            enabled = false;
         }
 
         private void Update()
         {
+            if(!enabled) return;
             currentDistanceFromPlayer -= Input.GetAxis("Mouse ScrollWheel") * zoomSensitivity;
             if (currentDistanceFromPlayer > maxDistanceFromPlayer)
             {
@@ -68,6 +72,7 @@ namespace FG
 
         private void LateUpdate()
         {
+            if(!enabled) return;
             UpdateFocusPoint();
             ManualRotation();
             Quaternion lookRotation;

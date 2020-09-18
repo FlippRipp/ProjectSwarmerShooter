@@ -39,7 +39,6 @@ public class CharacterHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        Debug.Log(currentHealth);
         lastDamageTime = Time.time;
         currentHealth -= damage;
         CharacterHealthChanged?.Invoke(currentHealth);

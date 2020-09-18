@@ -211,7 +211,7 @@ namespace FG
 			dir = new Vector3(dir.x, 0, dir.z);
 			dir.Normalize();
 			Vector3 velocity = _body.velocity.magnitude * slideSpeedModifier * (dir * (_characterData.slideTurnMultiplier * 0.01f) + _body.velocity).normalized;
-			velocity.y = _adjustVerticalVelocity * _characterData.gravityMultiplier;
+			velocity.y = _adjustVerticalVelocity + -_characterData.gravityMultiplier;
 			_body.velocity = velocity;
 			slideSpeedModifier = 1f;
 
@@ -246,7 +246,7 @@ namespace FG
 			dir = new Vector3(dir.x, 0, dir.z);
 			dir.Normalize();
 			Vector3 velocity = (dir * (_CurrentSpeed * _inputAmount));
-			velocity.y = _adjustVerticalVelocity * _characterData.gravityMultiplier;
+			velocity.y = _adjustVerticalVelocity + -_characterData.gravityMultiplier;
 			_body.velocity = velocity;
 		}
 
