@@ -25,7 +25,28 @@ public class PlayerWeapon : WeaponActivator
         int randomWeapon = Random.Range(0, weapons.Length);
         if (weapons[randomWeapon] != null)
         {
-            ActiveWeapons[equipSlot] = weapons[randomWeapon];
+            if (equipSlot == 0)
+            {
+                if (ActiveWeapons[1] != weapons[randomWeapon])
+                {
+                    ActiveWeapons[equipSlot] = weapons[randomWeapon];
+                }
+                else
+                {
+                    EquipRandomWeapon(equipSlot);
+                }
+            }
+            else
+            {
+                if (ActiveWeapons[0] != weapons[randomWeapon])
+                {
+                    ActiveWeapons[equipSlot] = weapons[randomWeapon];
+                }
+                else
+                {
+                    EquipRandomWeapon(equipSlot);
+                }
+            }
         }
     }
     
@@ -35,7 +56,28 @@ public class PlayerWeapon : WeaponActivator
         if (weapons[randomWeapon] != null)
         {
             int randomWeaponSlot = Random.Range(0, ActiveWeapons.Length - 1);
-            ActiveWeapons[randomWeaponSlot] = weapons[randomWeapon];
+            if (randomWeaponSlot == 0)
+            {
+                if (ActiveWeapons[1] == weapons[randomWeapon])
+                {
+                    ActiveWeapons[randomWeaponSlot] = weapons[randomWeapon];
+                }
+                else
+                {
+                    EquipRandomWeapon();
+                }
+            }
+            else
+            {
+                if (ActiveWeapons[0] == weapons[randomWeapon])
+                {
+                    ActiveWeapons[randomWeaponSlot] = weapons[randomWeapon];
+                }
+                else
+                {
+                    EquipRandomWeapon();
+                }
+            }
         }
     }
 

@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUp : MonoBehaviour
+namespace FG
 {
-    private void OnTriggerEnter(Collider other)
+
+    public class PickUp : MonoBehaviour
     {
-        if (other.CompareTag("Player"))
+        private void OnTriggerEnter(Collider other)
         {
-            GameplayEventManager.current.PickUp();
+            if (other.CompareTag("Player"))
+            {
+                GameplayEventManager.instance.PickUp();
+            }
         }
     }
 }

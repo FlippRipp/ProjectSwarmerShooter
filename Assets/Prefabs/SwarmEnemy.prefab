@@ -142,7 +142,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  maxShield: 0
+  regen: 0
+  regenCoolDown: 5
+  regenPerSecond: 4
   CharacterDied:
     m_PersistentCalls:
       m_Calls:
@@ -158,3 +160,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  CharacterHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []

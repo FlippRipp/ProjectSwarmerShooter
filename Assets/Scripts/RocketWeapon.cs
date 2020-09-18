@@ -3,8 +3,10 @@
 public class RocketWeapon : Weapon
 {
     private float lastRocketFireTime;
+    [SerializeField] private WeaponData weaponData;
 
-    public override void Fire(WeaponData weaponData, Transform weaponTransform, Transform activator, Vector3 attackDir)
+
+    public override void Fire(Transform weaponTransform, Transform activator, Vector3 attackDir)
     {
         if (Time.time - lastRocketFireTime > weaponData.rocketFireRate)
         {
