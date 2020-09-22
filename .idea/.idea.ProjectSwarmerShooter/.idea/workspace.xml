@@ -23,24 +23,190 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectSwarmerShooter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectSwarmerShooter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectSwarmerShooter/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectSwarmerShooter/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectSwarmerShooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectSwarmerShooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SwarmEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SwarmEnemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyWaves.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyWaves.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameplayEventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameplayEventManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewBehaviourScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewBehaviourScript.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PickUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RocketWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShieldAbility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShieldAbility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplitShotWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SplitShotWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SwarmerEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SwarmerEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponActivator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponActivator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Stamp.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Stamp.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/StampAnim.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/StampAnim.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/CharacteMovementData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/CharacteMovementData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/EnemySwarmBossData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/EnemySwarmBossData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/EnemySwarmData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/EnemySwarmData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/WeaponData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/WeaponData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/WeaponDataGattlingGun.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/WeaponDataGattlingGun.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/BloodEffect.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/BloodEffect.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Bullet.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Bullet.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Dome.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Dome.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemy.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Metal Light.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Metal Light.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Metal.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Metal.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Rocket.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Rocket.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Walls.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Walls.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Dome.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Dome.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Pillar1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Pillar1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/TileWall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/TileWall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Wall1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Wall1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Wall2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Wall2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/WallDeco1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/WallDeco1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Physic Material.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Physic Material.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BulletExplotion.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BulletExplotion.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dome.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Dome.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pillar1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pillar1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rocket.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rocket.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RocketExplotion.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RocketExplotion.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SwarmEnemy.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SwarmEnemy.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SwarmEnemyBoss.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SwarmEnemyBoss.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TileWall.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TileWall.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WallStrip.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WallStrip.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Global Volume Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/Global Volume Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game_Profiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game_Profiles/GameObject Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game_Profiles/GameObject Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallonsExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallonsExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterHealth.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterHealth.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DeathMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DeathMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySwarmData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySwarmData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyWaves.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyWaves.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameplayEventManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameplayEventManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IntDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IntDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KillCounter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KillCounter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OrbitalCamera.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OrbitalCamera.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PickUp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PickUp.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerInputFPS.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerInputFPS.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerWeapon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerWeapon.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rocket.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketWeapon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketWeapon.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScreenBloodEffect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScreenBloodEffect.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShieldAbility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShieldAbility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShieldDisplay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShieldDisplay.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnPoint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnPoint.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplitShotWeapon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplitShotWeapon.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SwarmerEnemy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SwarmerEnemy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Timer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Timer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponActivator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponActivator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Master.mixer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Master.mixer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/thick-stamp-Bass.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/thick-stamp-Bass.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/thick-stamp.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/thick-stamp.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BloodEffect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BloodEffect.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BloodMask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BloodMask.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Bloody4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Bloody4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BloodyScreen1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BloodyScreen1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BloodyScreen2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BloodyScreen2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BloodyScreen3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BloodyScreen3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BloodyScreen4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BloodyScreen4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BloodyScreen5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/BloodyScreen5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/GoStamp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/GoStamp.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/ShieldMask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/ShieldMask.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/ShieldOutline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/ShieldOutline.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset_Renderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset_Renderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,35 +217,64 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KillCounter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemySwarmData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50FE65A4-93A0-4952-84F1-E3562EFBE38D/6b/4010239e/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FG/Scripts/PooledParticle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/8e/ae95487d/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/SwarmerEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Data/BallonsExample.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Swarmer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HealthAndShield.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterHealth.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScreenBloodEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemySwarmData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Timer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PickUp.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/KillCounter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ShieldAbility.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SwarmerEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyWaves.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SplitShotWeapon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RocketWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponActivator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerWeapon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameplayEventManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyWaves.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BulletWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInputFPS.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RocketWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUpData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RocketPowerUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SwarmerEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PickUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PickUpManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameplayEventManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUpController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MisileUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MissileUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ObjectPooler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/BulletWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/PowerUpData.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/ObjectPooler.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/DeathMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/CharacterMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/EnemySwarmData.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/GameplayEventManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/KillCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/MissileUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/OrbitalCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/PickUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/PlayerInputFPS.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/PooledParticle.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/PowerUpController.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/Rocket.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/RocketPowerUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/ScreenBloodEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/ShieldAbility.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/Timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/WeaponActivator.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/WeaponData.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/SpawnPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/EnemyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/FG/Scripts/SwarmerEnemy.cs" />
       </list>
     </option>
   </component>
@@ -131,6 +326,10 @@
       <workItem from="1600149368217" duration="7833000" />
       <workItem from="1600241246869" duration="15503000" />
       <workItem from="1600324558889" duration="10761000" />
+      <workItem from="1600521880062" duration="4606000" />
+      <workItem from="1600599723010" duration="9610000" />
+      <workItem from="1600669132932" duration="13421000" />
+      <workItem from="1600758395509" duration="18328000" />
     </task>
     <servers />
   </component>
@@ -160,5 +359,9 @@
     </state>
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/-1920.8.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600259872677" />
     <state x="92" y="96" width="1736" height="889" key="VCS.FileHistoryDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1600327297153" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1600605625020">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1600605625020" />
   </component>
 </project>

@@ -6,34 +6,42 @@
     <e p="D:\ProjectSwarmerShooter" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Scripts" t="Include">
-          <e p="BallonsExample.cs" t="Include" />
-          <e p="Bullet.cs" t="Include" />
-          <e p="CharacterData.cs" t="Include" />
-          <e p="CharacterHealth.cs" t="Include" />
-          <e p="CharacterMovement.cs" t="Include" />
-          <e p="EnemySwarmData.cs" t="Include" />
-          <e p="EnemyWaves.cs" t="Include" />
-          <e p="GameManager.cs" t="Include" />
-          <e p="GameplayEventManager.cs" t="Include" />
-          <e p="IntDrawer.cs" t="Include" />
-          <e p="KillCounter.cs" t="Include" />
-          <e p="MainMenu.cs" t="Include" />
-          <e p="OrbitalCamera.cs" t="Include" />
-          <e p="PickUp.cs" t="Include" />
-          <e p="PlayerInputFPS.cs" t="Include" />
-          <e p="PlayerWeapon.cs" t="Include" />
-          <e p="Rocket.cs" t="Include" />
-          <e p="RocketWeapon.cs" t="Include" />
-          <e p="ScreenBloodEffect.cs" t="Include" />
-          <e p="ShieldAbility.cs" t="Include" />
-          <e p="SpawnPoint.cs" t="Include" />
-          <e p="SplitShotWeapon.cs" t="Include" />
-          <e p="SwarmerEnemy.cs" t="Include" />
-          <e p="Timer.cs" t="Include" />
-          <e p="Weapon.cs" t="Include" />
-          <e p="WeaponActivator.cs" t="Include" />
-          <e p="WeaponData.cs" t="Include" />
+        <e p="FG" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Bullet.cs" t="Include" />
+            <e p="BulletWeapon.cs" t="Include" />
+            <e p="CharacterData.cs" t="Include" />
+            <e p="CharacterHealth.cs" t="Include" />
+            <e p="CharacterMovement.cs" t="Include" />
+            <e p="DeathMenu.cs" t="Include" />
+            <e p="EnemyManager.cs" t="Include" />
+            <e p="EnemySwarmData.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+            <e p="GameplayEventManager.cs" t="Include" />
+            <e p="KillCounter.cs" t="Include" />
+            <e p="MissileUI.cs" t="Include" />
+            <e p="ObjectPooler.cs" t="Include" />
+            <e p="OrbitalCamera.cs" t="Include" />
+            <e p="PickUp.cs" t="Include" />
+            <e p="PickUpManager.cs" t="Include" />
+            <e p="PlayerInputFPS.cs" t="Include" />
+            <e p="PlayerWeapon.cs" t="Include" />
+            <e p="PooledParticle.cs" t="Include" />
+            <e p="PowerUpController.cs" t="Include" />
+            <e p="PowerUpData.cs" t="Include" />
+            <e p="Rocket.cs" t="Include" />
+            <e p="RocketPowerUp.cs" t="Include" />
+            <e p="SceneLoader.cs" t="Include" />
+            <e p="ScreenBloodEffect.cs" t="Include" />
+            <e p="ShieldAbility.cs" t="Include" />
+            <e p="ShieldDisplay.cs" t="Include" />
+            <e p="SpawnPoint.cs" t="Include" />
+            <e p="SwarmerEnemy.cs" t="Include" />
+            <e p="Timer.cs" t="Include" />
+            <e p="Weapon.cs" t="Include" />
+            <e p="WeaponActivator.cs" t="Include" />
+            <e p="WeaponData.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
