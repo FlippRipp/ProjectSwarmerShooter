@@ -38,6 +38,7 @@
             <e p="SpawnPoint.cs" t="Include" />
             <e p="SwarmerEnemy.cs" t="Include" />
             <e p="Timer.cs" t="Include" />
+            <e p="TutorialGoal.cs" t="Include" />
             <e p="Weapon.cs" t="Include" />
             <e p="WeaponActivator.cs" t="Include" />
             <e p="WeaponData.cs" t="Include" />
